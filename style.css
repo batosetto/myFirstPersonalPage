@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/cs??family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #195e4e 16.62%, #31ad8c 85.61%);;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.heading-image {
+    height: 72px;
+}
+
+.heading-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.heading-menu-iten {
+    font-family: 'Sarala', sans-serif ;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.heading-menu-iten:hover {color: red;}
+
+.content {
+    margin-bottom: 45px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-content-written {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content-title {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: #FFF2E7;
+    padding-bottom: 15px;
+}
+
+.main-content-subtitle {
+    font-family: 'Sarala', sans-serif ;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ECD6C4;
+}
+
+.main-content-button {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.432);
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #2F2325;
+}
+
+.main-content-button:hover {color: red;}
+
+.main-content-image {
+    height: 200px;
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.secondary-content-title {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 30px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFF2E7;
+    margin-bottom: 15px;
+}
+
+.secondary-content-paragraph { 
+    font-family: 'Sarala', sans-serif ;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.secondary-content-subtitle {
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+    font-size: 25px;
+    color: #FFF2E7; 
+}
+
+
+.main-secondary-title {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFF2E7;
+}
+
+.footer-all {
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;   
+}
+
+.footer-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-iten-menu {
+    font-family: 'Sarala', sans-serif ;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.footer-iten-menu:hover {
+    background-color: #31ad8c;
+    color: red;}
+
+.footer-written {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-family: 'Sarala', sans-serif ;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ECD6C4;
+    padding: 10px;
+}
+
+.container-bio-page {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+
+}
+fieldset{
+    font-family: 'Sarala', sans-serif;
+    border:0;
+}
+input, select, textarea, button {
+    font-family: 'Sarala', sans-serif;
+    border-radius: 5px;
+}
+
+.selectors {
+    font-family: 'Sarala', sans-serif;
+    margin-bottom: 1em;
+}
+.selectors label{
+    font-family: 'Sarala', sans-serif;
+    margin-bottom: 0.2em;
+    color:  #ECD6C4;
+    display:block;
+}
+
+fieldset.group.selectors{
+    font-family: 'Sarala', sans-serif;
+    float: left;
+    margin-right: 1em;
+}
+
+.group input[type="text"], .selectors input[type="email"], .selectors select, .selectors textarea {
+    font-family: 'Sarala', sans-serif;
+    padding: 0.2em;
+    border: 1px solid #FFF2E7;
+    box-shadow: 2px 2px 2px rgba(84, 82, 82, 0.432);
+    display:block;
+}
+
+.group select option {
+    font-family: 'Sarala', sans-serif;
+    padding-right: 1em;
+}
+
+.group input:focus, .group select:focus, .group textarea:focus {
+    background: #E0E0F8;
+}
+
+.button {
+    font-family: 'Sarala', sans-serif;
+   font-size: 1.2em;
+   background: #E0E0F8; 
+   border: 0;
+   margin-bottom: 1em;
+   color: #ffffff;
+   padding: 0.2em 0.6em;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+   text-shadow: 1px 1px 1px rgba(84, 82, 82, 0.432);
+   position: absolute;
+   margin-right: -50px;
+   transform: translate(-50%, -50%);
+}
+
+.button:hover {
+    background: #ECD6C4 ;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+    text-shadow: none;
+}
+
+.button, select{
+    cursor: pointer;
+}
+
+#check {
+    display: inline-block;
+}

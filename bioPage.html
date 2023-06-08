@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project - CPAN134">
+    <title>Bio Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="heading">
+        <img style="height: 100px;" src="brasil.png" alt="Illustration of resume">
+        <nav class="heading-menu">
+            <a class="heading-menu-iten" href="index.html" target="_blank">Home Page</a>
+            <a class="heading-menu-iten" href="bioPage.html" target="_blank">Bio Page</a>
+            <a class="heading-menu-iten" href="resume.html" target="_blank">Resume</a>
+            <a class="heading-menu-iten" href="projects.html" target="_blank">Projects</a>
+            <a class="heading-menu-iten" href="form.html" target="_blank">Contact Form</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section class="main-content" style="padding:20px ;">
+            <div class="main-content-written">
+                <h1 class="main-content-title" style="border-bottom: 0.4px solid #FFF2E7; padding-top: 15px;"> Personal Life </h1>
+            </div>
+        </section>
+            <div class="main-content-written" style="flex-direction: row ; align-items: center;">
+               
+                <img class="main-content-image" style="height: 400px; width: 400px;" src="family.jpeg">
+                <p style=" font-family: 'Sarala', sans-serif; font-weight: 200; font-size: 16px; color: #ECD6C4;"> Hi, I'm Barbara :) <br>I'm from Brazil and completely in love with pets. <br>
+                I have arrived in Canada few months ago. So... What am I doing here? <br>
+                As you can see in my <a class="heading-menu-iten" href="resume.html" target="_blank">Resume</a> page, I'm civil engineer and I worked for 10 years with constructions and project management. <br>
+                However, I'm not the kind of person who enjoyes doing the same thing for too long (or living in the same place).<br>
+                So I decided to start a new carreer from zero. But this challenge didn't seem to be that big, I wanted more: start a new carreer in a different country. <br>
+                That's why we are here :)
+                But... who are we? <br>
+                Me, my husband and our two dogs: Joca and Zeca (in fact we have three dogs, but one of them couldn't come with us because of his big size and now he lives with my parents-in-law.).
+            
+                </b> </p>
+            </div>
+            <div class="container-bio-page">
+
+            </div>
+        </section>
+        <section class="secondary-content" style="padding:20px;">
+            <h4 class="secondary-content-title" style="text-align: center ; border-top: 0ch; padding-top: 0px;"> My Dogs</h4>
+
+
+            <button type="button" id="joca" onclick="joca()"> Joca </button>
+            <button type="button" id="zeca" onclick="zeca()"> Zeca </button>
+            <button type="button" id="chico" onclick="chico()"> Chico </button>
+            <br><br>
+            <img src="dogs3.png" id="all" width="300px" height="300">
+        </section>
+    </main>
+    <script>
+
+
+        function joca() {
+            var image = document.getElementById("all")
+            image.src="joca.jpeg";
+            document.getElementById("joca").innerHTML = "I am Joca! I am the oldest of the pack and I was rescued from the streets by my father about 9 years ago. I have already suffered with abandonment, but today I help my family to face this big challenge that is living in a distant country far from family and friends. I don't know exactly how old I am, because when I was rescued I was already a grown up boy. As I am old, I'd rather sleep all day long on the sofa and my mom says that I am the most behaved dog she has ever seen! ";
+        };
+        function zeca() {
+            var image = document.getElementById("all")
+            image.src="zeca.jpg";
+            document.getElementById("zeca").innerHTML = "Hi there, I'm Zeca! I am the yongest and the craziest of my pack. As my brothers, I was rescued from the streets and I am so grateful that my family rescued me, that I do whatever is possible to protect them, that's why I cannot accept any dog getting close to my parents. Sometimes my mom is sad about it, because I always put her in trouble... but, she always says that I'm her favourite dog! I know she loves more 'cause I'm nuts =P";
+        };
+        function chico() {
+            var image = document.getElementById("all")
+            image.src="chico.png";
+            document.getElementById("chico").innerHTML ="Hello friend from Canada! My name is Chico :) Unfortunatlly, I couldn't follow my family in this Canadian journey because I'm too big to fly. Even with this huge distance, I know that I live in their hearts and they live in mine. I cannot wait to see mom, dad and little brothers again. We are a great pack and we miss each other a lot! ";
+        };
+
+    </script>
+</body>
+</html>

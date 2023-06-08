@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final Project - CPAN134">
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header class="heading">
+        <img class="heading-image" src="contact.png" alt="Illustration of resume">
+        <nav class="heading-menu">
+            <a class="heading-menu-iten" href="index.html" target="_blank">Home Page</a>
+            <a class="heading-menu-iten" href="bioPage.html" target="_blank">Bio Page</a>
+            <a class="heading-menu-iten" href="resume.html" target="_blank">Resume</a>
+            <a class="heading-menu-iten" href="projects.html" target="_blank">Projects</a>
+            <a class="heading-menu-iten" href="form.html" target="_blank">Contact Form</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="main-content">
+            <div class="main-content-written">
+                <h1 class="main-content-title" style="border-bottom: 0.4px solid #FFF2E7; padding-top: 15px;"> Contact me </h1>
+            </div>
+        </section>
+
+        <section class="secondary-content">
+            <form id="myForm" action="http://webdevbasics.net/scripts/demo.php" method="post" name="myForm" id="myForm">
+                <fieldset class="group">
+                    <div class="selectors">
+                        <label for="fname"><strong>First Name: </strong></label>
+                        <input type="text" name="fname" id="fname" required>
+                    </div>
+
+                    <div class="selectors">
+                        <label for="lname"><strong> Name: </strong></label>
+                        <input type="text" name="lname" id="lname" required>
+                    </div>
+
+                    <div class="selectors">
+                        <label for="email"><strong>Email: </strong></label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <br>
+                </fieldset>
+                <fieldset class="group">
+                    <div class="selectors">
+                        <label>Would you like to make a complain or a compliment about this the website?</label><br>
+                        <label>
+                            <input type="radio" name="feedback" value="compliment"> Compliment
+                        </label>
+                        <label>
+                            <input type="radio" name="feedback" value="complain"> Complain
+                        </label><br>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <div class="selectors">
+                        <lable for="options" style="color: #ECD6C4"> Options </lable><br>
+                        <select id="options">
+                            <option selected disable value="">Select</option>
+                            <option>CSS</option>
+                            <option>DOM</option>
+                            <option>Criativity</option>
+                            <option>HTML</option>
+                            <option>Content</option>
+                        </select> <br>
+                    </div>
+
+                    <div id="check" style="color: #ECD6C4">
+                        <label> <strong>Select the page:</strong></label><br>
+                        <input type="checkbox" id="homePage" name="homePage" value="homePage">
+                        <label for="homePage">Home Page</label>
+                        <input type="checkbox" id="contact" name="contact" value="contact">
+                        <label for="contact">Contact Form</label>
+                        <input type="checkbox" id="bio" name="bio" value="bio">
+                        <label for="bio">Bio Page</label>
+                        <input type="checkbox" id="resume" name="resume" value="resume">
+                        <label for="resume">Resume</label>
+                        <input type="checkbox" id="projects" name="projects" value="projects">
+                        <label for="projects">Projects</label>
+                        <br><br>
+                    </div>
+
+                    <div class="selectors">
+                        <label><strong>Comments: </strong></label>
+                        <textarea rows="6" style="width: 26em" id="comments" name="comments"></textarea>
+                        
+                    </div>
+                    <br>
+                    <button type="submit" class="button" onsubmit="" id="form" >Submit
+                        <a href="mailto: n01535342@humber.ca"></a>
+                    </button>
+                </fieldset>
+                
+            </form>
+        </section>
+
+        <script>
+
+            var receiveForm = document.querySelector("#form");
+                receiveForm.addEventListener("click", function (event){
+                    event.preventDefault();
+                
+            var form1 = document.querySelector("#form1");
+            console.log(myForm.fname.value);
+            console.log(myForm.lname.value);
+            console.log(myForm.email.value);
+            })
+        </script>
+    </main>
+
+
+</body>
+</html>
